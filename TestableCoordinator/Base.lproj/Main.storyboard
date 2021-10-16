@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Symptoms Lobby View Controller-->
+        <scene sceneID="nS7-pL-339">
+            <objects>
+                <viewController storyboardIdentifier="SymptomsLobbyViewController" id="Imy-gT-Gdq" customClass="SymptomsLobbyViewController" customModule="TestableCoordinator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eBU-Ja-X9h">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yru-eM-2OI">
+                                <rect key="frame" x="170" y="438" width="74" height="30"/>
+                                <state key="normal" title="Symptoms"/>
+                                <connections>
+                                    <action selector="symptoms:" destination="Imy-gT-Gdq" eventType="touchUpInside" id="qNW-kv-B35"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6ui-Ni-R7o"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Yru-eM-2OI" firstAttribute="centerY" secondItem="6ui-Ni-R7o" secondAttribute="centerY" id="3Eo-lp-dBQ"/>
+                            <constraint firstItem="Yru-eM-2OI" firstAttribute="centerX" secondItem="6ui-Ni-R7o" secondAttribute="centerX" id="Qfz-H9-Ogc"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rRy-IL-rVs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-61" y="167"/>
+        </scene>
+        <!--Diagnosis Lobby View Controller-->
+        <scene sceneID="vVM-CM-1hY">
+            <objects>
+                <viewController storyboardIdentifier="DiagnosisLobbyViewController" id="2te-JF-5Zw" customClass="DiagnosisLobbyViewController" customModule="TestableCoordinator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4Bx-ez-nPs">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yPe-9d-zbE">
+                                <rect key="frame" x="173.5" y="438" width="67" height="30"/>
+                                <state key="normal" title="Diagnosis"/>
+                                <connections>
+                                    <action selector="diagnosis:" destination="2te-JF-5Zw" eventType="touchUpInside" id="JPq-Fj-aJI"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="xX8-IP-EQ9"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="yPe-9d-zbE" firstAttribute="centerY" secondItem="xX8-IP-EQ9" secondAttribute="centerY" id="K4c-3L-2Rs"/>
+                            <constraint firstItem="yPe-9d-zbE" firstAttribute="centerX" secondItem="xX8-IP-EQ9" secondAttribute="centerX" id="LRE-PN-ink"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ckE-4D-dbd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1068" y="167"/>
+        </scene>
+        <!--Onboarding View Controller-->
+        <scene sceneID="o8q-jk-bcz">
+            <objects>
+                <viewController storyboardIdentifier="OnboardingViewController" id="75y-dZ-adx" customClass="OnboardingViewController" customModule="TestableCoordinator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="i36-Il-SLz">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ecz-gH-I17">
+                                <rect key="frame" x="166.5" y="438" width="81" height="30"/>
+                                <state key="normal" title="Onboarding"/>
+                                <connections>
+                                    <action selector="onBoarded:" destination="75y-dZ-adx" eventType="touchUpInside" id="fzy-W8-fxK"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="YmZ-GK-voJ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Ecz-gH-I17" firstAttribute="centerX" secondItem="YmZ-GK-voJ" secondAttribute="centerX" id="MQv-c3-qLr"/>
+                            <constraint firstItem="Ecz-gH-I17" firstAttribute="centerY" secondItem="YmZ-GK-voJ" secondAttribute="centerY" id="YRG-Ed-nLN"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="64b-5Z-ZTb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2128" y="878"/>
+        </scene>
+        <!--Phone Verification View Controller-->
+        <scene sceneID="9Nz-fl-Ubz">
+            <objects>
+                <viewController storyboardIdentifier="PhoneVerificationViewController" id="pVR-Nn-y4C" customClass="PhoneVerificationViewController" customModule="TestableCoordinator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xqd-8D-evA">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Ej-dS-SdX">
+                                <rect key="frame" x="163.5" y="438" width="87" height="30"/>
+                                <state key="normal" title="Verify Phone"/>
+                                <connections>
+                                    <action selector="verifyPhone:" destination="pVR-Nn-y4C" eventType="touchUpInside" id="ayd-DG-htC"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vgp-yg-dyj"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="3Ej-dS-SdX" firstAttribute="centerY" secondItem="vgp-yg-dyj" secondAttribute="centerY" id="DDj-wB-luB"/>
+                            <constraint firstItem="3Ej-dS-SdX" firstAttribute="centerX" secondItem="vgp-yg-dyj" secondAttribute="centerX" id="EVr-FM-DBH"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xCC-1T-R6e" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1068" y="878"/>
+        </scene>
+        <!--Pin Code View Controller-->
+        <scene sceneID="dmO-8t-8Ok">
+            <objects>
+                <viewController storyboardIdentifier="PinCodeViewController" id="8be-nt-uJ8" customClass="PinCodeViewController" customModule="TestableCoordinator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6lH-F6-OcH">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QlH-9v-nFa">
+                                <rect key="frame" x="172.5" y="438" width="69" height="30"/>
+                                <state key="normal" title="Pin coded"/>
+                                <connections>
+                                    <action selector="pinCoded:" destination="8be-nt-uJ8" eventType="touchUpInside" id="5Et-Fq-GAj"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ZvI-Hr-njb"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="QlH-9v-nFa" firstAttribute="centerX" secondItem="ZvI-Hr-njb" secondAttribute="centerX" id="C3r-z0-aso"/>
+                            <constraint firstItem="QlH-9v-nFa" firstAttribute="centerY" secondItem="ZvI-Hr-njb" secondAttribute="centerY" id="HJF-5D-3yo"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="A2i-9w-R2R" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-62" y="878"/>
+        </scene>
+        <!--App View Controller-->
+        <scene sceneID="GAX-sd-no2">
+            <objects>
+                <viewController storyboardIdentifier="AppViewController" id="mFg-Yb-n7u" customClass="AppViewController" customModule="TestableCoordinator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SBR-Yq-gqX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="Rd7-le-xDf">
+                                <rect key="frame" x="188.5" y="434.5" width="37" height="37"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="W3i-LR-65J"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Rd7-le-xDf" firstAttribute="centerX" secondItem="W3i-LR-65J" secondAttribute="centerX" id="Bec-Hr-vv6"/>
+                            <constraint firstItem="Rd7-le-xDf" firstAttribute="centerY" secondItem="W3i-LR-65J" secondAttribute="centerY" id="ZoQ-gg-JVH"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4ee-pl-8vc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2081" y="-588"/>
+        </scene>
+        <!--Welcome Lobby View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="WelcomeLobbyViewController" id="BYZ-38-t0r" customClass="WelcomeLobbyViewController" customModule="TestableCoordinator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LDM-3k-hh4">
+                                <rect key="frame" x="169" y="442.5" width="76" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="LDM-3k-hh4" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="km5-na-ayH"/>
+                            <constraint firstItem="LDM-3k-hh4" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="pCN-jA-Wyx"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2129" y="167"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
